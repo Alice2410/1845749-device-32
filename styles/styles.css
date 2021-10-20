@@ -676,6 +676,7 @@ footer{
     background-color: #dcdcdc;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    
 }
 
 .catalog-sorting-title{
@@ -843,8 +844,36 @@ footer{
 
 .catalog-filter{
     background-color: #ffffff;
+    width: 275px;
+    margin-left: auto;
+    
 }
 
 .catalog-pagination-container{
     background-color: #ebebeb;
+}
+
+.catalog-products{
+    display:flex;
+    width: 1440px;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: column;
+    width: 972px;
+    
+}
+
+.catalog-left-column{
+    padding: 0;
+    margin: 0;
+    width: 468px;
+}
+
+.product-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 72px;
+    margin-right: auto;
 }
