@@ -101,14 +101,14 @@
                     </li>
                 </ul>
             </header>
-<!--Фильтры товаров-->
+<!--Каталог товаров-->
             <section class="catalog-products">
                 <!--Временно скрываем заколовок с помощью hidden-->
                 <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
                 <!--Левая колонка с фильтрами-->
                 <div class="catalog-left-column">
                     <div class="catalog-filter-title-container">
-                        <span class="catalog-filter-title">Фильтр:</span>
+                        <p class="catalog-filter-title">Фильтр:</p>
                     </div>
                     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <!--Управление стоимостью товара-->
@@ -120,7 +120,7 @@
                                 <button class="range-toggle toggle-max" type="button">
                                     <span class="visually-hidden">Изменить максимальную цену.</span>
                                 </button>
-        <!--Ввести максимальную и минимальную стоимость товара-->
+                    <!--Ввести максимальную и минимальную стоимость товара-->
                                 <label class="catalog-filter-label">
                                     от 0<input class="catalog-filter-input" type="number" name="min-price">
                                 </label>
@@ -128,7 +128,7 @@
                                     до 5000<input class="catalog-filter-input" type="number" name="max-price">
                                 </label>
                             </fieldset>
-                
+                    <!--Управление цветом товара-->
                             <fieldset class="catalog-filter-group">
                                 <legend class="catalog-filter-title-category">Цвет</legend>
                                 <ul class="catalog-filter-list">
@@ -169,7 +169,7 @@
                                     </li>
                                 </ul>
                             </fieldset>
-                            
+                    <!--Bluetooth-->   
                             <fieldset class="catalog-filter-group">
                                 <legend class="catalog-filter-title-category">Bluetooth</legend>
                                 <ul class="catalog-filter-list">
@@ -213,12 +213,13 @@
                             <span class="visually-hidden">Сначала дешевые</span>
                         </a>
                     </div>
-    <!--Карточки товаров-->
+                <!--Карточки товаров-->
                     <div class="product-cards-container">
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                                <span class="button-moreinfo-card">Подробнее</span>
+                                <!--Временно скрывает span из потока с помощью hidden-->
+                                <span class="button-moreinfo-card" hidden>Подробнее</span>
                                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                             </a>
                             <span class="product-card-price">500 ₽</span>
@@ -226,7 +227,8 @@
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                                <span class="button-moreinfo-card">Подробнее</span>
+                                <!--Временно скрывает span из потока с помощью hidden-->
+                                <span class="button-moreinfo-card" hidden>Подробнее</span>
                                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                             </a>
                             <span class="product-card-price">1 500 ₽</span>
@@ -234,7 +236,8 @@
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                                <span class="button-moreinfo-card">Подробнее</span>
+                                <!--Временно скрывает span из потока с помощью hidden-->
+                                <span class="button-moreinfo-card" hidden>Подробнее</span>
                                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                             </a>
                             <span class="product-card-price">2 500 ₽</span>
@@ -242,15 +245,16 @@
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                                <span class="new-product">New</span>
-                                <span class="button-moreinfo-card">Подробнее</span>
+                                <!--Временно скрывает span из потока с помощью hidden-->
+                                <span class="new-product" hidden>New</span>
+                                <span class="button-moreinfo-card" hidden>Подробнее</span>
                                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                             </a>
                             <span class="product-card-price">4 900 ₽</span>
                         </div>
-                        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
                     </div>
-    <!--Пагинация каталога товаров-->
+                    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                <!--Пагинация каталога товаров-->
                     <div class="catalog-pagination-container">
                         <ul class="pagination">
                             <li class="pagination-item">
