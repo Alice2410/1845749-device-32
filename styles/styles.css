@@ -47,6 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    min-width: 1160px;
     font-family: "Rubik", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -60,9 +61,6 @@ body{
     outline: 5px solid rgb(14, 42, 165);
     outline-offset: -5px;
     display: flex;
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px;
     
 }
@@ -172,7 +170,6 @@ body{
 .page-container{
     margin:0;
     padding:0;
-
 }
 
 .slider-item{
@@ -258,10 +255,7 @@ h3 {
 .category-container{
     margin:0;
     padding:0;
-    width: 1160px;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
     justify-content: space-between;
     outline: 5px solid rgb(146, 13, 128);
     outline-offset: -5px;
@@ -551,8 +545,6 @@ footer{
 
 .page-footer-container{
     display: flex;
-    width: 1160px;
-    margin: 0 auto;
     flex-direction: column;
 }
 
@@ -858,16 +850,11 @@ footer{
 
 .catalog-products{
     display:flex;
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .catalog{
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .catalog-left-column{
@@ -882,4 +869,9 @@ footer{
     width: 760px;
     padding-top: 70px;
     padding-left: 70px;
+}
+
+.container{
+ width: 1160px;
+ margin: 0 auto;
 }
