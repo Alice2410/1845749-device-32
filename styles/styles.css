@@ -65,6 +65,12 @@ body{
     
 }
 
+.container-logo{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
 .container-navigation-all{
     margin: 0;
     padding: 0;
@@ -77,31 +83,115 @@ body{
 .navigation-list{
     margin:0;
     padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+
+.user-icon{
+    padding:0;
+    margin: 0;
+    min-width: 13px;
+    min-height: 12px;
+    margin-right: 13px;
+    outline: 5px solid rgb(58, 187, 65);
+    outline-offset: -5px;
+}
+
+.compare-icon{
+    padding:0;
+    margin: 0;
+    min-width: 10px;
+    min-height: 12px;
+    margin-right: 11px;
+    outline: 5px solid rgb(58, 187, 65);
+    outline-offset: -5px;
+}
+
+.crate-icon{
+    padding:0;
+    margin: 0;
+    min-width: 31px;
+    min-height: 21px;
+    margin-right: 11px;
+    outline: 5px solid rgb(58, 187, 65);
+    outline-offset: -5px;
+}
+
+.container-login{
+    padding:0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 184px;
+    margin-right: 50px;
+}
+
+.navigation-item.compare{
+    margin-right: 37px;
 }
 
 .container-navigation-user{
     margin:0;
     padding:0;
     display: flex;
+    flex-wrap: wrap;
     height: 20px;
-    margin-top: 35px;
     margin-bottom: 30px;
 }
 
-.navigation-list{
-    
-    display: flex;
-
-}
 
 .navigation-list-2{
     margin:0;
     padding:0;
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.navigation-list-2-inner{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.navigation-list-2-inner-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+
+.column-1{
+    margin-right: 46px;
+    white-space: nowrap;
+}
+
+.column-2{
+    margin-right: 62px;
+    white-space: nowrap;
+}
+
+.column-3{
+    white-space: nowrap;
+}
+
+.navigation-catalog{
+    width: 500px;
+    margin-right: 40px;
 }
 
 .searching-form-product{
+    margin:0;
+    padding: 0;
     margin-right: 40px;
+
     width: 500px;
 }
 
@@ -127,10 +217,27 @@ body{
     text-decoration: none;
 }
 
+.navigation-item>.navigation-link-user{
+    min-width: 10px;
+    min-height: 20px;
+}
+
 .navigation-item-2{
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
+}
+
+.navigation-item-2.delivery-header{
+    margin:0;
+    padding: 0;
+    margin-right: 35px;
+}
+
+.navigation-item-2.contacts-header{
+    margin:0;
+    padding: 0;
+    margin-left: auto;
 }
 
 .navigation-link-inner{
@@ -175,6 +282,7 @@ body{
 .slider-item{
     margin:0;
     padding:0;
+    margin-bottom: 70px;
     width: 1160;
     display: flex;
     justify-content: center;
@@ -195,7 +303,6 @@ body{
 .product-description-container{
     width: 560px;
     height: 560px;
-   
     outline: 5px solid rgb(13, 146, 84);
     outline-offset: -5px;
 }
@@ -208,6 +315,7 @@ body{
     text-align: right;
     color: white;
     background-color: #ffe17f;
+    
 }
 
 h3 {
@@ -219,11 +327,20 @@ h3 {
     color: black;
 }
 
+.slider-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+}
+
 .product-description{
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 400;
     text-align: left;
     color: #444444;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
 }
 
 .button-moreinfo-light{
@@ -235,21 +352,56 @@ h3 {
     text-decoration: none;
     color: black;
     letter-spacing: 0.2em;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.button-moreinfo-light-about-company{
+    font-family: "Raleway","Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.2em;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
 }
 
 .parameter-value{
+    
     font-family: "Rubik","Arial", sans-serif;
     font-size: 36px;
     line-height: 30px;
     font-weight: 400;
 }
 
+.parameter-value>td{
+    padding: 0;
+    margin: 0;
+    width: 160px;
+}
+
 .parameter{
+    padding: 0;
+    margin: 0;
+    padding-top: 22px;
     font-family: "Rubik","Arial", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
     color: #444444;
+}
+
+.parameter>td{
+    padding: 0;
+    margin: 0;
+    padding-top: 22px;
 }
 
 .category-container{
@@ -275,6 +427,12 @@ h3 {
     text-decoration: none;
 }
 
+.product-categories{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+}
+
 .tabs{
     background-color: #f0f0f0;
 }
@@ -294,6 +452,7 @@ h3 {
 .tabs-items{
     padding: 0;
     margin: 0;
+    margin-top: 80px;
     width: 360px;
     outline: 5px solid rgb(70, 50, 185);
     outline-offset: -5px;
@@ -319,7 +478,7 @@ h3 {
 .tabs-body{
     padding: 0;
     margin: 0;
-    
+    margin-top: 76px;
     padding-right: auto;
     outline: 5px solid rgb(13, 146, 91);
     outline-offset: -5px;
@@ -336,6 +495,8 @@ h3 {
     text-align: left;
     color: #444444;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 .delivery-car-container{
@@ -373,6 +534,14 @@ h3 {
     color: black;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    display: block;
+    width: 522px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivery{
+    margin-bottom: 145px;
 }
 
 .about-us-and-contacts-container{
@@ -384,6 +553,7 @@ h3 {
     display: flex;
     gap: 40px;
     justify-content: center;
+    padding-bottom: 90px;
 }
 
 .about-us{
@@ -407,6 +577,9 @@ h3 {
     font-weight: 800;
     text-align: left;
     color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 .info-about-company-description{
@@ -414,6 +587,9 @@ h3 {
     font-weight: 400;
     text-align: left;
     color: #444444;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 43px;
 }
 
 .about-us-companies{
@@ -421,6 +597,10 @@ h3 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
+    padding-top: 41px;
+    padding-left: 35px;
 }
 
 .info-about-company-section-name{
@@ -429,6 +609,9 @@ h3 {
     line-height: 30px;
     font-weight: 700;
     color: #444444;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 
@@ -440,6 +623,15 @@ h3 {
     font-weight: 400;
     text-align: left;
     color: #444444;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contacts-schedule{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .contacts-schedule-item{
@@ -447,6 +639,18 @@ h3 {
     font-weight: 400;
     text-align: left;
     color: #444444;
+    margin: 0;
+    padding: 0;
+}
+
+.delivery-items{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.delivery-items:last-child{
+    margin-bottom: 0;
 }
 
 .section-name{
@@ -456,6 +660,9 @@ h3 {
     font-weight: 800;
     text-align: left;
     color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
 }
 
 .newsletter{
@@ -482,6 +689,7 @@ h3 {
     color: #444444;
     margin: 0;
     margin-top: 86px;
+    margin-bottom: 64px;
     padding: 0;
     padding-left: auto;
     width: 560px;
@@ -489,18 +697,22 @@ h3 {
 
 .newsletter-form-container{
     margin: 0;
-    margin-top: 50px;
     padding: 0;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 135px;
     
 }
 
 .newsletter-form{
     margin:0;
-    margin-right: 136px;
     padding:0;
-    padding-left: 140px;
     display: flex;
+    width: 560px;
     outline: 5px solid rgb(146, 73, 13);
     outline-offset: -5px;
 }
@@ -527,6 +739,14 @@ h3 {
     width: 560px;
 }
 
+.tick-placeholder{
+    min-width: 14px;
+    min-height: 14px;
+    margin-right: 21px;
+    outline: 5px solid rgb(146, 73, 13);
+    outline-offset: -5px;
+}
+
 .newsletter-button-text{
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
@@ -535,6 +755,21 @@ h3 {
     color: black;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+.newsletter-button-container{
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.its-free{
+    margin: 0;
+    padding: 0;
+    
 }
 
 footer{
@@ -546,12 +781,16 @@ footer{
 .page-footer-container{
     display: flex;
     flex-direction: column;
+    padding-top: 62px;
+    padding-bottom: 62px;
 }
 
 .footer-contacts-container{
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 38px;
+    margin-bottom: 50px;
 }
 
 .footer-adress{
@@ -561,6 +800,8 @@ footer{
     line-height: 19px;
     text-align: left;
     width: 360px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-list-2-footer{
@@ -570,6 +811,8 @@ footer{
     width: 440px;
     justify-self: center;
     justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
    
 }
 
@@ -589,6 +832,8 @@ footer{
     margin: 0;
     width: 176px;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .phone-text{
@@ -641,6 +886,10 @@ footer{
     color: white;
 }
 
+.inner-header{
+    padding-left: 60px;
+}
+
 .inner-header-title{
     font-family: "Raleway","Arial", sans-serif;
     font-size: 50px;
@@ -648,6 +897,30 @@ footer{
     font-weight: 800;
     text-align: left;
     color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.breadcrumbs{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs-item{
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.breadcrumbs-arrow{
+    min-width: 4px;
+    min-height: 7px;
+    outline: 2px solid rgb(13, 146, 42);
+    outline-offset: -5px;
 }
 
 .breadcrumbs-link{
@@ -671,7 +944,14 @@ footer{
     background-color: #dcdcdc;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    
+    max-height: 20px;
+}
+
+.sorting-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #ebebeb;
 }
 
 .catalog-sorting-title{
@@ -682,6 +962,20 @@ footer{
     color: black;
     background-color: #ebebeb;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-right: 55px;
+}
+
+.sorting-button{
+    min-height: 10px;
+    min-width: 11px;
+    outline: 1px solid rgb(13, 146, 42);
+    outline-offset: -5px;
+}
+
+.button-light.sorting-button{
+    margin-right: 19px;
 }
 
 .catalog-filter-title-category{
@@ -746,11 +1040,28 @@ footer{
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 .pagination-link{
     text-decoration: none;
     color: black;
+}
+
+.pagination{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    padding: 0 30px;
+}
+
+.pagination-prev{
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 
 .catalog-prev{
@@ -805,14 +1116,18 @@ footer{
 }
 
 .tabs-item-container{
+    margin: 0;
+    padding: 0;
     width: 280px;
-    height: 40px;
+    height: 20px;
+    margin-bottom: 45px;
 }
 
 .tabs-item-container-checked{
     width: 280px;
     height: 40px;
     background-color: black;
+    margin-bottom: 33px;;
 }        
 
 .tabs-container{
@@ -823,25 +1138,41 @@ footer{
     width: 1160px;
     height: 100px;
     background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
 }
 
 .newsletter{
     background-color: #f0f0f0;
 }
 
+.main-inner{
+    margin: 0;
+    padding: 0;
+    padding-top: 44px;
+}
+
 .sorting-type{
     background-color: #ebebeb;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 72px;
+    max-height: 20px;
+    margin-right: auto;
 }
 
 .catalog-filter-title-container{
+    margin: 0;
+    padding: 0;
     background-color: #dcdcdc;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 60px;
 }
 
 .catalog-filter{
     background-color: #ffffff;
-    width: 275px;
-    margin-left: auto;
-    
+    padding-left: 60px;
 }
 
 .catalog-pagination-container{
@@ -855,6 +1186,7 @@ footer{
 .catalog{
     display: flex;
     flex-direction: column;
+    margin-bottom: 77px;
 }
 
 .catalog-left-column{
@@ -875,3 +1207,14 @@ footer{
  width: 1160px;
  margin: 0 auto;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
