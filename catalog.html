@@ -103,8 +103,9 @@
     <main class="main-inner main-container">
         <div class="page-container">
 <!--Внутренняя шапка с хлебными крошками-->
-            <header class="inner-header container">
-                <h2 class="inner-header-title">Моноподы для селфи</h2>
+            <header class="container">
+                <div class="inner-header">
+                    <h2 class="inner-header-title">Моноподы для селфи</h2>
     <!--Хлебные крошки-->
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
@@ -119,6 +120,8 @@
                         <a class="breadcrumbs-link">Моноподы для селфи</a>
                     </li>
                 </ul>
+                </div>
+                
             </header>
 <!--Каталог товаров-->
             <section class="catalog-products container">
@@ -232,8 +235,9 @@
                             <span class="visually-hidden">Сначала дешевые</span>
                         </a>
                     </div>
-                <!--Карточки товаров-->
-                    <div class="product-cards-container">
+                    <div class="catalog-cards-wraper">
+                        <!--Карточки товаров-->
+                        <div class="product-cards-container">
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -248,7 +252,7 @@
                                 <img class="product-card-image" src="img/catalog-img/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                                 <!--Временно скрывает span из потока с помощью hidden-->
                                 <span class="button-moreinfo-card visually-hidden" >Подробнее</span>
-                                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                                <h3 class="product-card-title">Профессиональная<br> селфи-палка</h3>
                             </a>
                             <span class="product-card-price">1 500 ₽</span>
                         </div>
@@ -257,7 +261,7 @@
                                 <img class="product-card-image" src="img/catalog-img/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                                 <!--Временно скрывает span из потока с помощью hidden-->
                                 <span class="button-moreinfo-card visually-hidden" >Подробнее</span>
-                                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                                <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
                             </a>
                             <span class="product-card-price">2 500 ₽</span>
                         </div>
@@ -271,10 +275,10 @@
                             </a>
                             <span class="product-card-price">4 900 ₽</span>
                         </div>
-                    </div>
-                    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+                        </div>
+                        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
                 <!--Пагинация каталога товаров-->
-                    <div class="catalog-pagination-container">
+                        <div class="catalog-pagination-container">
                         <ul class="pagination">
                             <li class="pagination-item">
                                 <a class="pagination-link pagination-prev" href="#">
@@ -302,7 +306,9 @@
                                 </a>
                             </li>
                         </ul>
+                        </div>
                     </div>
+                
                 </section>
             </section>
         </div>

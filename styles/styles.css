@@ -32,8 +32,6 @@
 
 html{
     height: 100%;
-    outline: 5px solid rgb(58, 6, 6);
-    outline-offset: -5px;
 }
 
 .main-container{
@@ -887,7 +885,7 @@ footer{
 }
 
 .inner-header{
-    padding-left: 60px;
+    padding: 0 60px;
 }
 
 .inner-header-title{
@@ -1014,6 +1012,16 @@ footer{
     letter-spacing: 0.2em;
 }
 
+.product-card{
+    display: grid;
+    grid-template-rows: 380px 32px minmax(50px, max-content);
+    grid-template-columns: 280px auto;
+}
+
+.product-card-image{
+    grid-column: 1/-1;
+}
+
 .product-card-title{
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 700;
@@ -1022,6 +1030,9 @@ footer{
     text-align: left;
     text-decoration: none;
     letter-spacing: -0.02em;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: start;
 }
 
 .product-card-price{
@@ -1031,6 +1042,9 @@ footer{
     line-height: 21px;
     text-align: right;
     color: #444444;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
 }
 
 .pagination-show-more{
@@ -1096,6 +1110,8 @@ footer{
 
 .product-card-link{
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .button-moreinfo-card{
@@ -1196,11 +1212,27 @@ footer{
 }
 
 .product-cards-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    row-gap: 44px;
+    column-gap: 40px;
+    margin-bottom: 44px;
+    padding-top: 70px;
+    /*
+    реализация блка с карточками товаров на флексах
+
+    display: flex
     flex-wrap: wrap;
     gap: 40px;
     width: 760px;
     padding-top: 70px;
+    padding-left: 70px;
+    */
+}
+
+.catalog-cards-wraper{
+    display: flex;
+    flex-direction: column;
     padding-left: 70px;
 }
 
