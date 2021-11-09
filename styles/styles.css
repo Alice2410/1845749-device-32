@@ -34,6 +34,11 @@ html{
     height: 100%;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .main-container{
     
     flex-grow: 1;
@@ -56,75 +61,41 @@ body{
     background-color:#ffe17f;
     color: black;
     display: flex;
-    /* не поняла зачем
-    margin-top: 40px;
-    */
-    padding-top: 48px;
     position: relative;
     top: 40px;
 }
 
-.container-logo{
-    padding: 0;
-    margin: 0;
+.page-header_logo{
     position: absolute;
     top: -23px;
-    /*
-    margin-bottom: 35px;
-    */
 }
 
-.container-navigation-all{
-    margin: 0;
-    padding: 0;
+.page-header_body{
     padding-right: 60px;
     padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 38px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.navigation{
-    margin: 0;
-    padding: 0;
-    line-height: 20px;
+.page-header_services{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
-
-.navigation-list{
-    margin:0;
-    padding:0;
+.page-header_user-navigation{
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    line-height: 20px;
-}
-
-.user-icon{
-    padding:0;
-    margin: 0;
-    min-width: 13px;
-    min-height: 12px;
-    margin-right: 13px;
-    height: 20px;
-    position: relative;
-}
-
-.user-svg{
-    position: absolute;
-    bottom: 2.5px;
-}
-
-.compare-icon{
-    padding:0;
-    margin: 0;
-    min-width: 10px;
-    min-height: 12px;
-    margin-right: 11px;
-    height: 20px;
 }
 
 .crate-icon{
-    padding:0;
-    margin: 0;
+    
     min-width: 31px;
     min-height: 21px;
     margin-right: 11px;
@@ -132,74 +103,67 @@ body{
 }
 
 .container-login{
-    padding:0;
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 184px;
-    margin-right: 50px;
+    
 }
 
+/*
 .navigation-item.compare{
     margin-right: 37px;
 }
+*/
 
-.container-navigation-user{
-    margin:0;
-    padding:0;
+.page-header_menu{
     display: flex;
     flex-wrap: wrap;
-    height: 20px;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.page-header_button{
+  display: none;
+  width: 160px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-left: solid 2px #000000;
 }
 
 .user-visually-hidden{
-    opacity: 0;
+    opacity: 1;
 }
 
 
-.navigation-list-2{
-    margin:0;
-    padding:0;
-    padding: 15px 0;
+.page-header_services-list{
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-    line-height: 50px;
+    list-style: none;
+    
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navigation-button{
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 50px;
-    height: 50px;
-    grid-area: button;
-    background-color: transparent;
-    cursor: pointer;
-}
 
-.navigation-list-2-inner{
-    margin:0;
-    padding:0;
+
+.page-header_submenu-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     list-style-type: none;
-    line-height: 30px;
 }
 
-.navigation-list-2-inner-container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-top: 35px;
-    margin-bottom: 57px;
-}
+
 
 .column-1{
-    margin-right: 46px;
+    margin-right: 42px;
     white-space: nowrap;
 }
 
@@ -212,18 +176,18 @@ body{
     white-space: nowrap;
 }
 
-.navigation-catalog{
-    width: 500px;
-    margin-right: 40px;
-    position: relative;
-    
+.page-header_submenu{
+    width: 100%;
+    background-color: #ffe17f;
+    display: flex;
+    display: none;
+    z-index: 2;
+    padding: 33px 60px 57px 60px;
+    position: absolute;
+    left: 0;
 }
 
-.searching-form-product{
-    margin:0;
-    padding: 0;
-    margin-right: 24px;
-    height: 40px;
+.page-header_form{
     width: 516px;
 }
 
@@ -259,26 +223,69 @@ body{
     min-height: 20px;
 }
 
-.navigation-button-catalog-container{
-    width: 313px;
-    display: grid;
-    
-    grid-template-columns: 263px 50px;
-    grid-template-areas: "catalog button";
-    
-    position: absolute;
-    top: -15px;
+.page-header_user-navigation-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 21px;
+    position: relative;
+    left: -21px;
+    flex-basis: auto;
+}
+
+  .page-header_user-navigation-item:hover {
+    opacity: 0.6;
+  }
+  
+  .page-header_user-navigation-item:active {
+    opacity: 0.3;
+  }
+
+  .page-header_user-navigation-item:focus-within{
+    border-radius: 20px;
+    outline: 2px solid #af4fff;
+  }
+
+.page-header_user-navigation-item>.user-icon {
+    width: 13px;
+    height: 12px;
+    margin-right: 12px;
+  }
+
+.page-header_user-navigation-item>.compare-icon {
+    width: 10px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.page-header_user-navigation-item>.cart-icon {
+    width: 31px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.page-header_user-navigation-item_cart{
+    padding-left: 0;
+}
+
+.page-header_catalog{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    position: relative;
     left: -18px;
-}
+  }
+  
+.page-header_catalog:active {
+    opacity: 0.3;
+ }
 
-.navigation-item{
-    height: 20px;
-}
-
-.navigation-item-2{
+.page-header_services-item{
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 21px;
+    padding: 14px 20px 15px 20px;
+    left: -20px;
+    position: relative;
 }
 
 .navigation-item-2.delivery-header{
@@ -299,11 +306,24 @@ body{
     line-height: 18px;
     font-weight: 400;
     color: black;
-    background-color: #ffe17f;
     text-decoration: none;
+    padding: 3px 15px 5px 15px;
 }
 
-.navigation-link-main{
+.navigation-link-inner:hover{
+    opacity: 0.6;
+}
+
+.navigation-link-inner:active{
+    opacity: 0.3;
+}
+
+.navigation-link-inner:focus{
+    border-radius: 25px;
+    outline: 2px solid #af4fff;
+}
+
+.page-header_services-item_link{
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -313,27 +333,78 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    position:relative;
+    
 }
 
-.navigation-item-catalog{
+
+
+.page-header_services-item_link::before {
+  content: '';
+  background: #000000;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  z-index: 10;
+  }
+
+.page-header_services-item_link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.page-header_services-item:active {
+    opacity: 0.3;
+  }
+
+.page-header_services-item:focus-within {
+    border-radius: 25px;
+    outline: 2px solid #af4fff;
+  }
+
+.page-header_catalog-link{
     font-family: "Raleway","Arial", sans-serif;
-    font-size: 18px;
     line-height: 21px;
     font-weight: 800;
-    color: black;
-    background-color: #ffe17f;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     display: inline-block;
-    margin: 0;
-    padding: 0;
     width: 227px;
     padding: 14px 18px 15px 18px;
-    grid-area: catalog;
-    border: 3px solid purple;
-    border-radius: 20%;
 }
+
+.navigation-button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(../img/index-img/icons/background_1.svg);
+}
+
+.page-header_catalog-link:hover + button{
+    background-image: url(../img/index-img/icons/background_3.svg);
+
+}
+
+.page-header_catalog-link:active{
+    opacity: 0.3;
+}
+
+.page-header_catalog-link:active + button{
+    background-image: url(../img/index-img/icons/background_3.svg);
+    opacity: 0.3;
+
+}
+
+.page-header_catalog-link:focus {
+    border-radius: 25px;
+    outline: 2px solid #af4fff;
+  }
 
 .page-container{
     margin:0;
@@ -608,9 +679,6 @@ h3 {
     color: #444444;
     margin: 0;
     padding: 0;
-}
-
-.delivery-man{
 }
 
 .delivery-car-container{
@@ -1405,7 +1473,6 @@ footer{
     padding-top: 70px;
     /*
     реализация блка с карточками товаров на флексах
-
     display: flex
     flex-wrap: wrap;
     gap: 40px;

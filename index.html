@@ -12,105 +12,77 @@
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
 <!--Главный хэдер сайта-->   
     <header class="page-header container">
-        <div class="container-navigation-all">
+        <div class="page-header_body">
         <!--Лого сайта-->
-            <div class="container-logo">
+            <div class="page-header_logo">
                 <img class="logo" src="img/index-img/logo-1.svg" alt="Логотип магазина электроники Девайс" width="145" height="36">
             </div>
         <!--Первая строка навигации-->
-            <div class="container-navigation-user">
+            <div class="page-header_menu">
         <!--Форма поиска по сайту-->
-                <form class="searching-form-product" action="" method="post">
-                    
-                    <label for="product-name" >
-                        <img src="img/index-img/icons/search.svg" width="16px" height="16px" class="search-icon">
-                        <span class="visually-hidden"> Поиск товара</span>
-                    </label>
-                    <input type="text" id="product-name" name="product-name" placeholder="Поиск по сайту">
-                    <button class="button" type="submit">Найти</button>
+                <form class="page-header_form" action="" method="post">
+                    <fieldset>
+                        <label for="product-name" >
+                            <img src="img/index-img/icons/search.svg" width="16px" height="16px" class="search-icon">
+                            <span class="visually-hidden"> Поиск товара</span>
+                        </label>
+                        <input type="text" id="product-name" name="product-name" placeholder="Поиск по сайту">
+                        <button class="page-header_button" type="submit">Найти</button>
+                    </fieldset> 
                 </form>
         <!--Пользовательское меню-->
-                <nav class="navigation">
-                    <ul class="navigation-list">
-                        <li class="user-icon">
-                            <svg class="user-svg" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/></svg>
+                <nav>
+                    <ul class="page-header_user-navigation">
+                        <li class="page-header_user-navigation-item page-header_user-navigation-item_login">
+                            <svg class="user-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/></svg>
+                            <a class="navigation-link-user-login" href="#">Войти</a>
                         </li>
-                        <li class="container-login">
-                            
-                                <a class="navigation-link-user-login" href="#">Войти</a>
-                                <a class="navigation-link-user user-visually-hidden" href="#">Выйти</a>
+                        <!--
+                        <li class="page-header_user-navigation-item page-header_user-navigation-item_logout">
+                            <a class="navigation-link-user user-visually-hidden" href="#">Выйти</a>
                         </li>
-                        <li class="compare-icon">
-                            <svg aria-hidden="true" focusable="false" width="10" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/></svg>
-                        </li>
-                        <li class="navigation-item compare">
+                        -->
+                        <li class="page-header_user-navigation-item page-header_user-navigation-item_compare">
+                            <svg class="compare-icon" aria-hidden="true" focusable="false" width="10" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/></svg>
                             <a class="navigation-link-user" href="#">Сравнить</a>
                         </li>
-                        <li class="crate-icon">
-                            <svg  aria-hidden="true" focusable="false" width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="10.5" fill="#fff"/><path d="m30.3 7-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9h-3.5c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L31 8v-.2c0-.4-.3-.8-.7-.8ZM23 3.9l2.2 3.2h-4.3L23 3.9Z" fill="#000"/></svg>
-                        </li>
-                        <li class="navigation-item">
+                        <li class="page-header_user-navigation-item page-header_user-navigation-item_cart">
+                            <svg class="cart-icon" aria-hidden="true" focusable="false" width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="10.5" fill="#fff"/><path d="m30.3 7-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9h-3.5c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L31 8v-.2c0-.4-.3-.8-.7-.8ZM23 3.9l2.2 3.2h-4.3L23 3.9Z" fill="#000"/></svg>
                             <a class="navigation-link-user" href="#">Корзина</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         <!--Вторая строка навигации-->
-        <!--Пользовательское меню-->
-            <nav class="navigation">
-                <ul class="navigation-list-2">
-                        <li class="navigation-catalog">
-                            <div class="navigation-button-catalog-container">
-                                <div class="navigation-item-catalog"><span>Каталог товаров</span></div>
-                                <button class="navigation-button">
-                                    <svg aria-hidden="true" focusable="false" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".2" cx="25" cy="25" r="24" fill="#FFE17F" stroke="#000" stroke-width="2"/><path d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" opacity=".3"/></svg>
-                                    <span class="visually-hidden">Открыть каталог товаров</span>
-                                </button>
-                            </div>
-                            
-                            <div class="navigation-list-2-inner-container">
-                                <ul class="navigation-list-2-inner column-1">
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Виртуальная реальность</a>
-                                    </li>
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Моноподы для селфи</a>
-                                    </li>
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Экшн-камеры</a>
-                                    </li>
-                                </ul>
-                                <ul class="navigation-list-2-inner column-2">
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Фитнес-браслеты</a>
-                                    </li>
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Умные часы</a>
-                                    </li>
-                                </ul>
-                                <ul class="navigation-list-2-inner column-3">
-                                    <li class="navigation-item-inner">
-                                        <a class="navigation-link-inner" href="#">Квадрокоптеры</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </li>
-                        <li class="navigation-item-2 delivery-header">
-                            <a class="navigation-link-main" href="#">Доставка</a>
-                        </li>
-                        <li class="navigation-item-2 warranty-header">
-                            <a class="navigation-link-main" href="#">Гарантия</a>
-                        </li>
-                        <li class="navigation-item-2 contacts-header">
-                            <a class="navigation-link-main" href="#">Контакты</a>
-                        </li>
+            <nav class="page-header_services">
+                <div class="page-header_catalog">
+                    <a href="#" class="page-header_catalog-link">Каталог товаров</a>
+                    <button class="navigation-button"><span class="visually-hidden">Открыть каталог товаров</span></button>
+                </div>
+                <ul class="page-header_services-list">
+                        <li class="page-header_services-item delivery-header"><a class="page-header_services-item_link" href="#">Доставка</a></li>
+                        <li class="page-header_services-item warranty-header"><a class="page-header_services-item_link" href="#">Гарантия</a></li>
+                        <li class="page-header_services-item contacts-header"><a class="page-header_services-item_link" href="#">Контакты</a></li>
                 </ul>
             </nav>
+            <div class="page-header_submenu">       
+                    <ul class="page-header_submenu-list column-1">
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Моноподы для селфи</a></li>
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Экшн-камеры</a></li>
+                    </ul>
+                    <ul class="page-header_submenu-list column-2">
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Фитнес-браслеты</a></li>
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Умные часы</a></li>
+                    </ul>
+                    <ul class="page-header_submenu-list column-3">
+                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
+                    </ul>
+            </div>
         </div>
     </header>
 <!--Основное содержание страницы-->
-    <main class="main-container main-index">
+    <main class="main-container main-index visually-hidden">
         <div class="page-container">
             <!--Слайдер с популярными товарами-->
             <section class="slider-devices">
