@@ -58,6 +58,20 @@
                 <div class="page-header_catalog">
                     <a href="#" class="page-header_catalog-link">Каталог товаров</a>
                     <button class="navigation-button"><span class="visually-hidden">Открыть каталог товаров</span></button>
+                    <div class="page-header_submenu">       
+                        <ul class="page-header_submenu-list column-1">
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Моноподы для селфи</a></li>
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Экшн-камеры</a></li>
+                        </ul>
+                        <ul class="page-header_submenu-list column-2">
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Фитнес-браслеты</a></li>
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Умные часы</a></li>
+                        </ul>
+                        <ul class="page-header_submenu-list column-3">
+                            <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
+                        </ul>
+                </div>
                 </div>
                 <ul class="page-header_services-list">
                         <li class="page-header_services-item delivery-header"><a class="page-header_services-item_link" href="#">Доставка</a></li>
@@ -65,61 +79,50 @@
                         <li class="page-header_services-item contacts-header"><a class="page-header_services-item_link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="page-header_submenu">       
-                    <ul class="page-header_submenu-list column-1">
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Моноподы для селфи</a></li>
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Экшн-камеры</a></li>
-                    </ul>
-                    <ul class="page-header_submenu-list column-2">
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Фитнес-браслеты</a></li>
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Умные часы</a></li>
-                    </ul>
-                    <ul class="page-header_submenu-list column-3">
-                        <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
-                    </ul>
-            </div>
+            
         </div>
     </header>
-<!--Основное содержание страницы-->
-    <main class="main-container main-index visually-hidden">
-        <div class="page-container">
-            <!--Слайдер с популярными товарами-->
-            <section class="slider-devices">
+
+    <main class="page-main">
+<!--Слайдер с популярными товарами-->
+        <section class="page-main_slider container">
                 <h2 class="visually-hidden">Популярные товары</h2>
     <!--Первый слайд-->
-                <h3 class="visually-hidden">Квадрокоптер</h3>
-                <div class="slider-item">
-                    <div class="slider-image-container">
-                        <img class="slider-image" src="img/index-img/slider-1.png" alt="Квадрокоптер" width="560" height="560">
-
-                        <button class="slider-button slider-prev" type="button">
-                            <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
-                            <span class="visually-hidden">Предыдущее фото</span>
-                        </button>
-                        <button class="slider-button slider-next" type="button">
-                            <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 60h3.5L20 30 3.5 0H0l16.2 30L0 60Z" fill="#000"/></svg>
-                            <span class="visually-hidden">Следующее фото</span>
-                        </button>
-                    </div>
-                    <div class="product-description-container">
-                        <span class="slide-number">01</span>
-                        <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
-                        <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                        <div class="button-moreinfo-light-container">
-                            <a class="button-moreinfo-light" href="#">Подробнее</a>
+                <div class="page-main_slider-item">
+                    <header class="page-main_slider-header">
+                        <h3 class="visually-hidden">Квадрокоптер</h3>
+                        <div class="slide-number">01</div>
+                    </header>
+                    <div class="page-main_slider-body">
+                        <div class="page-main_slider-section page-main_slider-image_container">
+                            <img class="slider-image" src="img/index-img/slider-1.png" alt="Квадрокоптер" width="560" height="560">
+                            <button class="slider-button slider-prev" type="button">
+                                <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Предыдущее фото</span>
+                            </button>
+                            <button class="slider-button slider-next" type="button">
+                                <svg aria-hidden="true" focusable="false" width="20" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 60h3.5L20 30 3.5 0H0l16.2 30L0 60Z" fill="#000"/></svg>
+                                <span class="visually-hidden">Следующее фото</span>
+                            </button>
                         </div>
-                        <table class="product-charecteristic">
-                            <tr class="parameter-value">
-                                <td>800 м</td>
-                                <td>50 м</td>
-                            </tr>
-                            <tr class="parameter">
-                                <td>Дальность полета</td>
-                                <td>Радиус поражения</td>
-                            </tr>
-                        </table>
-                    </div>
+                        <div class="page-main_slider-section page-main_slider-description_container">
+                            <h3 class="slider-description_title">Порхает как бабочка, жалит как пчела!</h3>
+                            <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                            <div class="button-moreinfo-light-container">
+                                <a class="button-moreinfo-light" href="#">Подробнее</a>
+                            </div>
+                            <table class="product-charecteristic">
+                                <tr class="parameter-value">
+                                    <td>800 м</td>
+                                    <td>50 м</td>
+                                </tr>
+                                <tr class="parameter">
+                                    <td>Дальность полета</td>
+                                    <td>Радиус поражения</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
                 </div>
     <!--Второй слайд-->
                 <h3 class="visually-hidden">Фитнес-браслет</h3>
@@ -205,9 +208,9 @@
                     </button>
                     </li>
                 </ol>
-            </section>
+        </section>
 <!--Блок с категориями товаров-->
-            <section class="product-categories">
+        <section class="product-categories">
                 <h2 class="visually-hidden">Категории товаров</h2>
                 <div class="category-container container">
                     <div class="category">
@@ -274,9 +277,9 @@
                         <a href="#" class="category-link">Квадрокоптеры</a>
                     </div>
                 </div>
-            </section>
-    <!--Табы с сервисами-->
-            <div class="tabs-container">
+        </section>
+<!--Табы с сервисами-->
+        <div class="tabs-container">
                 <section class="tabs">
                     <h2 class="visually-hidden">Сервисы</h2>
                     <div class="tabs-container">
@@ -357,9 +360,9 @@
                         </div>
                     </div>
                 </section>
-            </div>
-    <!--Секция с попапом-->
-            <section class="delivery">
+        </div>
+<!--Секция с попапом-->
+        <section class="delivery">
                 <h2 class="visually-hidden">Доставка под заказ</h2>
                 <div class="delivery-container">
                     <div class="delivery-car-container">
@@ -377,10 +380,10 @@
                     </div>
                     -->
                 </div>
-            </section>
-            <div class="about-us-and-contacts-container">
+        </section>
+        <div class="about-us-and-contacts-container">
         <!--Блок "О нас"-->
-                <section class="about-us">
+            <section class="about-us">
                     <h2 class="info-about-company-name">О нас</h2>
                     <p class="info-about-company-description">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
                     <p class="info-about-company-description">Мы можем доставить ваш товар в самые отдалённые <br>уголки России транспортными компаниями:</p>
@@ -393,7 +396,7 @@
                         <a class="button-moreinfo-light-about-company" href="#">Подробнее о нас</a>
                     </div>
                     
-                </section>
+            </section>
         <!--Блок "Контакты"-->
                 <section class="contacts">
                     <h2 class="info-about-company-name">Контакты</h2>
@@ -418,10 +421,10 @@
                     </div>
                     
                 </section>
-            </div>
-    
-    <!--Блок с подпиской на рассылку-->
-            <section class="newsletter">
+        </div>
+
+<!--Блок с подпиской на рассылку-->
+        <section class="newsletter">
                 <div class="newsletter-description-container">
                     <h2 class="section-name section-name-newsletter">Подпишитесь <br> на рассылку</h2>
                     <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br>
@@ -446,8 +449,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+        </section>
     </main>
 <!--Основной футер сайта-->
     <footer class="main-footer">
