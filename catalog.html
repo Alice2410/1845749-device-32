@@ -20,10 +20,10 @@
     <!--Первая строка навигации-->
         <div class="page-header_menu">
     <!--Форма поиска по сайту-->
-            <form class="page-header_form" action="" method="post">
+            <form class="page-header_form" action="https://echo.htmlacademy.ru" method="post">
 
                     <label for="product-name" >
-                        <img src="img/index-img/icons/search.svg" width="16px" height="16px" class="search-icon">
+                        <img src="img/index-img/icons/search.svg" width="16" height="16" class="search-icon" alt="поиск">
                         <span class="visually-hidden"> Поиск товара</span>
                     </label>
                     <input class="page-header_input" type="text" id="product-name" name="product-name" placeholder="Поиск по сайту">
@@ -227,39 +227,43 @@
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                                <!--Временно скрывает span из потока с помощью hidden-->
-                                <span class="button-moreinfo-card visually-hidden">Подробнее</span>
-                                <h3 class="product-card-title">Любительская селфи-палка</h3>
+                                <div class="product-card-description">
+                                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                                    <span class="product-card-price">500 ₽</span>
+                                </div>
                             </a>
-                            <span class="product-card-price">500 ₽</span>
+                            <button class="button-moreinfo-card ">Подробнее</button>
                         </div>
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                                <!--Временно скрывает span из потока с помощью hidden-->
-                                <span class="button-moreinfo-card visually-hidden" >Подробнее</span>
-                                <h3 class="product-card-title">Профессиональная<br> селфи-палка</h3>
+                                <div class="product-card-description">
+                                    <h3 class="product-card-title">Профессиональная<br> селфи-палка</h3>
+                                    <span class="product-card-price">1 500 ₽</span>
+                                </div>
                             </a>
-                            <span class="product-card-price">1 500 ₽</span>
+                            <button class="button-moreinfo-card visually-hidden">Подробнее</button>
                         </div>
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                                <!--Временно скрывает span из потока с помощью hidden-->
-                                <span class="button-moreinfo-card visually-hidden" >Подробнее</span>
-                                <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
+                                <div class="product-card-description">
+                                    <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
+                                    <span class="product-card-price">2 500 ₽</span>
+                                </div>
                             </a>
-                            <span class="product-card-price">2 500 ₽</span>
+                            <button class="button-moreinfo-card visually-hidden">Подробнее</button>
                         </div>
                         <div class="product-card">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                                <!--Временно скрывает span из потока с помощью hidden-->
-                                <span class="new-product" hidden>New</span>
-                                <span class="button-moreinfo-card visually-hidden" >Подробнее</span>
-                                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                                <div class="product-card-description">
+                                    <h3 class="product-card-title">Селфи-палка «Следуй за<br> мной»</h3>
+                                    <span class="product-card-price">4 900 ₽</span>
+                                </div>
                             </a>
-                            <span class="product-card-price">4 900 ₽</span>
+                            <button class="button-moreinfo-card visually-hidden">Подробнее</button>
+                            <span class="new-product" hidden>New</span>
                         </div>
                         </div>
                         <button class="button pagination-show-more" type="button">Загрузить ещё</button>

@@ -32,6 +32,9 @@
 
 html{
     height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 1160px;
 }
 
 *{
@@ -55,6 +58,8 @@ body{
     flex-direction: column;
     min-height: 100%;
     min-width: 1160px;
+    max-width: 100%;
+    
     font-family: "Rubik", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -771,6 +776,7 @@ h3 {
     padding-left: 120px;
     min-width: 880px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .tabs-description{
@@ -1484,6 +1490,7 @@ footer{
 
 .sorting-container{
     display: flex;
+    align-items: center;
     background-color: #ebebeb;
     position: relative;
 }
@@ -1516,15 +1523,32 @@ footer{
     max-height: 10px;
     max-width: 11px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sorting-button>svg{
+    fill-opacity: 0.2;
 }
 
 .sorting-button:focus{
     outline: 5px solid #af4fff;
 }
 
-.button-light.sorting-button{
-    
+.sorting-button:hover>svg{
+    fill-opacity: 0.5;
 }
+
+.sorting-button:active{
+    outline: transparent;
+}
+
+.sorting-button:active>svg{
+    fill-opacity: 1;
+}
+
+.button-light{}
+
 
 .catalog-filter-title-category{
     font-family: "Rubik","Arial", sans-serif;
@@ -1563,13 +1587,19 @@ footer{
 }
 
 .product-card{
-    display: grid;
-    grid-template-rows: 380px 32px minmax(50px, max-content);
-    grid-template-columns: 280px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .product-card-image{
-    grid-column: 1/-1;
+    margin-bottom: 32px;
+}
+
+.product-card-description{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .product-card-title{
@@ -1722,6 +1752,23 @@ footer{
     text-decoration: none;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+.product-card-link::before{
+    content:"";
+    width: 360px;
+    height: 380px;
+    background-color: #f0f0f0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-card-link:hover::before{
+   opacity: 0.8;
 }
 
 .button-moreinfo-card{
@@ -1733,6 +1780,34 @@ footer{
     text-decoration: none;
     color: black;
     letter-spacing: 0.2em;
+    padding: 9px 10px 11px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+    top: 171px;
+    left: 100px;
+    opacity: 0;
+}
+
+.button-moreinfo-card::before{
+    content: "";
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background-color: #ffc700;
+    z-index: -1;
+}
+
+.button-moreinfo-card:hover{
+    background-color: #ffc700;
+}
+
+.button-moreinfo-card:active{
+    background-color: #ffc700;
+    color:rgba(0, 0, 0, 0.3)
 }
 
 .category-image{
