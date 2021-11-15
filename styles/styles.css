@@ -485,10 +485,15 @@ body{
     right: -50px;
 }
 
-.page-main_slider-item{
+.page-main_slider{
+    position: relative;
     margin-bottom: 70px;
+}
+
+.page-main_slider-item{
     width: 1160;
     margin-top: -38px;
+    max-height: 560px;
 }
 
 .page-main_slider-body{
@@ -521,6 +526,7 @@ body{
     border: none;
     position: absolute;
     top: 250px;
+    cursor: pointer;
 }
 
 .slider-button:hover{
@@ -544,6 +550,56 @@ body{
 .slider-next{
     right: 19px;
 }
+
+.slider-pagination{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 177px;
+    right: 60px;
+}
+
+.slider-pagination-item{
+    margin: 0;
+    margin-right: 22px;
+}
+
+.slider-pagination-item:last-child{
+    margin-right: 0;
+}
+
+.slider-pagination-button{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-pagination-button:focus{
+    outline-color: #af4fff;
+}
+
+.slider-pagination-button:hover{
+    outline-color: #666666;
+}
+
+.slider-pagination-button:active{
+    outline-color: #b3b3b3;
+}
+
+.slider-pagination-button-current{
+    background-color: black;
+}
+
 
 .page-main_slider-description_container{
     position: relative;
@@ -1351,7 +1407,12 @@ footer{
     position: relative;
 }
 
-.footer-links-container::before{
+.footer-decoration{
+    width: 135px;
+    position: relative;
+}
+
+.footer-decoration::before{
     content: "";
     height: 7px;
     width: 80px;
@@ -1372,10 +1433,7 @@ footer{
 }
 
 .html-academy-link{
-    position: absolute;
     max-height: 33px;
-    top: -7px;
-    right: -10px;
     padding: 10px;
 }
 
@@ -1405,9 +1463,7 @@ footer{
     text-align: left;
     text-decoration: none;
     color: white;
-    padding: 1px 13px 3px;
-    position: relative;
-    right: -13px;
+    padding: 3px 13px 3px;
 }
 
 
@@ -1942,14 +1998,20 @@ footer{
     outline: transparent;
 }
 
+.category-link:active > .category-name{
+    color: black;
+    opacity: 0.3;
+}
+
 .category-image-link:focus-within > p{
     outline: transparent;
 }
-
+/*
 .category-link:active + a{
     color: black;
     opacity: 0.3;
 }
+*/
 
 .img-1{
     position: absolute;
