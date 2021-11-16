@@ -21,7 +21,6 @@
         <div class="page-header_menu">
     <!--Форма поиска по сайту-->
             <form class="page-header_form" action="https://echo.htmlacademy.ru" method="post">
-
                     <label for="product-name" >
                         <img src="img/index-img/icons/search.svg" width="16" height="16" class="search-icon" alt="поиск">
                         <span class="visually-hidden"> Поиск товара</span>
@@ -120,20 +119,29 @@
                     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <!--Управление стоимостью товара-->
                             <fieldset class="catalog-filter-group">
-                            <legend class="catalog-filter-title-category">Стоимость</legend>
-                                <button class="range-toggle toggle-min" type="button">
-                                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                                </button>
-                                <button class="range-toggle toggle-max" type="button">
-                                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                                </button>
-                    <!--Ввести максимальную и минимальную стоимость товара-->
-                                <label class="catalog-filter-label">
-                                    от 0<input class="catalog-filter-input" type="number" name="min-price">
-                                </label>
-                                <label class="catalog-filter-label">
-                                    до 5000<input class="catalog-filter-input" type="number" name="max-price">
-                                </label>
+                                <legend class="catalog-filter-title-category">Стоимость</legend>
+                                <div class="range">
+                                    <div class="range-scale">
+                                        <div class="range-bar" style="left: 0px; width: 119px;">
+                                            <button class="range-toggle toggle-min" type="button">
+                                                <span class="visually-hidden">Изменить минимальную цену.</span>
+                                            </button>
+                                            <button class="range-toggle toggle-max" type="button">
+                                                <span class="visually-hidden">Изменить максимальную цену.</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                        <!--Ввести максимальную и минимальную стоимость товара-->
+                                    <div class="range-wrapper-inputs">
+                                        <label class="catalog-filter-label">
+                                            от <input class="catalog-filter-input" type="number" name="min-price" value="0">
+                                        </label>
+                                        <label class="catalog-filter-label">
+                                            до <input class="catalog-filter-input" type="number" name="max-price" value="5000">
+                                        </label>
+                                    </div>
+                                </div>
                             </fieldset>
                     <!--Управление цветом товара-->
                             <fieldset class="catalog-filter-group">

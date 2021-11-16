@@ -52,7 +52,7 @@ html{
 
 body{
     margin: 0;
-    padding-top: 40px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -94,6 +94,8 @@ body{
     position: relative;
 }
 .page-header_user-navigation{
+    margin: 0;
+    padding: 0;
     width: 521px;
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +132,7 @@ body{
 .page-header_button{
   display: none;
   width: 160px;
+  box-sizing: border-box;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -151,7 +154,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    
+    padding: 0;
+    margin: 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -159,6 +163,8 @@ body{
 
 
 .page-header_submenu-list{
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -196,10 +202,30 @@ body{
 }
 
 .page-header_input{
+    margin: 0;
+    padding: 10px 0 10px 52px;
+    font: inherit;
     line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    width: 336px;
+    box-sizing: border-box;
 }
 
+.page-header_input::placeholder{
+    color: black;
+    opacity: 0.3;
+}
+.page-header_input:hover::placeholder{
+    opacity: 0.6;
+}
+
+
 .page-header_form{
+    margin: 0;
+    padding: 0;
     width: 516px;
     height: 40px;;
     position: relative;
@@ -211,12 +237,29 @@ body{
     align-items: center;
 }
 
+.page-header_form::after{
+    content: "";
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    background-image: url(../img/index-img/icons/search.svg);
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 16px;
+}
+
 .page-header_form:focus-within{
     border-radius: 20px;
     outline: 2px solid #af4fff;
 }
 
+.page-header_form:focus-within input{
+    outline: none;
+}
 
+.page-header_input:not(:placeholder-shown){
+    outline: black;
+}
 
 .search-icon{
     cursor: pointer;
@@ -433,6 +476,8 @@ body{
   }
 
 .page-header_catalog-link{
+    padding: 0;
+    margin: 0;
     font-family: "Raleway","Arial", sans-serif;
     line-height: 21px;
     font-weight: 800;
@@ -632,6 +677,8 @@ h3 {
 }
 
 .slider-description_title{
+    padding: 0;
+    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -640,7 +687,10 @@ h3 {
     font-weight: 400;
     text-align: left;
     color: #444444;
+    padding: 0;
+    margin: 0;
     margin-bottom: 46px;
+    
 }
 
 .button-moreinfo-light-container{
@@ -771,6 +821,8 @@ h3 {
 }
 
 .category-name_link{
+    padding: 0;
+    margin: 0;
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -887,6 +939,16 @@ h3 {
     height: 100px;
     background-color: #ffe17f;
     position: relative;
+}
+
+.delivery-car-container::before{
+    content: "";
+    width: 125px;
+    height: 100px;
+    position: absolute;
+    background-image: url(../img/index-img/delivery-car.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .delivery-car{
@@ -1063,6 +1125,7 @@ h3 {
     padding: 0;
     padding-top: 45px;
     padding-left: 35px;
+    list-style-type: none;
 }
 
 .info-about-company-section-name{
@@ -1111,6 +1174,18 @@ h3 {
     margin: 0;
     padding: 0;
     margin-bottom: 15px;
+    position: relative;
+}
+
+.delivery-items::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFC700;
+    left: -34px;
+    top: 6px;
 }
 
 .delivery-items:last-child{
@@ -1181,13 +1256,23 @@ h3 {
     display: block;
     width: 601px;
     height: 2.5px;
-    background-color: rgba(0,0,0,0.1);
+    /*background-color: rgba(0,0,0,0.1);*/
 }
 
 .newsletter-description-free{
     margin: 0;
     padding: 0;
     margin-top: 13px;
+}
+
+.newsletter-description-free::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-image: url(../img/index-img/icons/tick.svg);
+    left: -35px;
+    top: 8px;
 }
 
 .newsletter-email{
@@ -1198,6 +1283,46 @@ h3 {
     width: 601px;
 }
 
+.field{
+    margin: 0;
+    width: 601px;
+    height: 52.5px;
+    font: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+
+
+
+.field:hover{
+    background-color: transparent;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+
+}
+
+.field:focus{
+    background-color: #dcdcdc;
+    outline: none;
+}
+
+.field:disabled{
+    background-color: #ffe17f;
+    opacity: 0.2;
+}
+
+.field-error{
+    background-color: transparent;
+    border-bottom: 3px solid #ff3d3d;
+}
+
+.field:not(:placeholder-shown){
+    border-bottom: 3px solid black;
+    background-color: transparent;
+}
+
 .section-name-newsletter{
     margin: 0;
     margin-top: 75px;
@@ -1206,12 +1331,7 @@ h3 {
     width: 560px;
 }
 
-.tick-placeholder{
-    min-width: 14px;
-    min-height: 14px;
-    margin-right: 21px;
-    
-}
+
 
 .newsletter-button-text{
     font-family: "Raleway","Arial", sans-serif;
@@ -1240,6 +1360,7 @@ h3 {
 }
 
 .newsletter-button:focus{
+    outline: none;
     border: 3px solid #af4fff;
 }
 
@@ -1262,7 +1383,7 @@ h3 {
 .its-free{
     margin: 0;
     padding: 0;
-    
+    position: relative;
 }
 
 footer{
@@ -1286,6 +1407,8 @@ footer{
 }
 
 .footer-adress{
+    padding: 0;
+    margin: 0;
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1300,12 +1423,16 @@ footer{
 }
 
 .footer-navigation_list{
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
 .footer-navigation_list-item{
+    padding: 0;
+    margin: 0;
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -1434,11 +1561,11 @@ footer{
 
 .html-academy-link{
     max-height: 33px;
-    padding: 10px;
 }
 
 .html-academy-link:focus{
     outline: 2px solid #af4fff;
+    outline-offset: 10px;
     border-radius: 10px;
 }
 
@@ -1459,11 +1586,10 @@ footer{
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 2px;
     text-align: left;
     text-decoration: none;
     color: white;
-    padding: 3px 13px 3px;
 }
 
 
@@ -1474,6 +1600,7 @@ footer{
 .contacts-phone-footer:focus{
     outline: 2px solid #af4fff;
     border-radius: 25px;
+    outline-offset: 13px;
 }
 
 .footer-phone_container:hover{
@@ -1528,7 +1655,19 @@ footer{
     text-decoration: none;
     color: rgba(0,0,0,0.6);
     padding: 5px 12px 6px 13px;
-    margin-right: 3px;
+    margin-right: 11px;
+    margin-left: -13px;
+    position: relative;
+}
+
+.breadcrumbs-link:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    background-color: red;
+    right: 0;
+    top: 7px;
 }
 
 .breadcrumbs-link:focus{
@@ -1628,6 +1767,9 @@ footer{
     text-align: left;
     text-decoration: none;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 29px;
 }
 
 .catalog-filter-label{
@@ -2147,6 +2289,9 @@ footer{
 }
 
 .catalog-filter-title-container{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 83px;
     background-color: #dcdcdc;
     padding-top: 25px;
     padding-bottom: 26px;
@@ -2166,8 +2311,68 @@ footer{
 }
 
 .catalog-filter{
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
     padding-left: 60px;
+}
+
+.catalog-filter-group{
+    margin: 0;
+    padding: 0;
+}
+
+.range-scale{
+    position: relative;
+    height: 2px;
+    margin-bottom: 15px;
+    background-color: #dcdcdc;
+    width: 200px;
+}
+
+.range-bar{
+    position: absolute;
+    height: 2px;
+    background-color: black;
+}
+
+.range-toggle{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #ebebeb;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-toggle:hover{
+    background-color: #767676;
+}
+
+.range-toggle:focus{
+    border-color: #af4fff;
+}
+
+.range-toggle:active{
+    background-color: black;
+    border-color: black;
+}
+
+.toggle-min{
+    top: -8px;
+}
+
+.toggle-max{
+    right: -9px;
+    top: -8px;
+}
+
+.catalog-filter-list{
+    margin: 0;
+    padding: 0;
 }
 
 .catalog-pagination-container{
