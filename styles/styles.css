@@ -1637,7 +1637,7 @@ footer{
 }
 
 .breadcrumbs-item{
-   
+   position: relative;
 }
 
 .breadcrumbs-icon{
@@ -1655,19 +1655,19 @@ footer{
     text-decoration: none;
     color: rgba(0,0,0,0.6);
     padding: 5px 12px 6px 13px;
-    margin-right: 11px;
+    margin-right: 24px;
     margin-left: -13px;
     position: relative;
 }
 
-.breadcrumbs-link:not(:last-child)::after{
+.breadcrumbs-item:not(:last-child)::before{
     content: "";
     position: absolute;
     width: 4px;
     height: 7px;
-    background-color: red;
-    right: 0;
-    top: 7px;
+    background-image: url(../img/catalog-img/nav-arrow.svg);
+    right: 15px;
+    top: 13.5px;
 }
 
 .breadcrumbs-link:focus{
@@ -1770,6 +1770,17 @@ footer{
     margin: 0;
     padding: 0;
     margin-bottom: 29px;
+    position: relative;
+}
+
+.catalog-filter-title-category::before{
+    content:"";
+    height: 2px;
+    width: 200px;
+    top: -11px;
+    left: 0;
+    background-color: black;
+    position: absolute;
 }
 
 .catalog-filter-label{
@@ -1777,8 +1788,30 @@ footer{
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: rgba(0,0,0,0.3)
+    color: rgba(0,0,0,0.3);
+    display: flex;
 }
+
+.catalog-filter-label:focus-within{
+    color:#af4fff;
+    opacity: 0.3;
+}
+
+.range-input:focus{
+    outline: none;
+    color: #af4fff;
+}
+
+.catalog-filter-label:active{
+    color:black;
+}
+
+.range-input:active{
+    outline: none;
+    color: black;
+}
+
+
 
 .control-label{
     font-family: "Rubik","Arial", sans-serif;
@@ -2317,14 +2350,41 @@ footer{
     padding-left: 60px;
 }
 
+.range-wrapper-inputs{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+
+.range-input{
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0,0,0,0.3);
+    width: 82px;
+    margin-left: 3px;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
 .catalog-filter-group{
     margin: 0;
+    margin-bottom: 36px ;
     padding: 0;
+    border: none;
 }
 
 .range-scale{
     position: relative;
     height: 2px;
+    margin-top: 10px;
     margin-bottom: 15px;
     background-color: #dcdcdc;
     width: 200px;
@@ -2356,10 +2416,14 @@ footer{
     border-color: #af4fff;
 }
 
+.toggle-min:focus
+
 .range-toggle:active{
     background-color: black;
     border-color: black;
 }
+
+
 
 .toggle-min{
     top: -8px;
