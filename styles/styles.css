@@ -1513,10 +1513,7 @@ footer{
     display: flex;
     justify-content: end;
     align-items: center;
-    /*
-    
-    */
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .phone-text{
@@ -1707,7 +1704,7 @@ footer{
 .sorting-container::after{
     content: "";
     height: 70px;
-    width: 100vw;
+    width: calc(100vw - 830px);
     position: absolute;
     top: 0;
     left: 0;
@@ -1784,12 +1781,18 @@ footer{
 }
 
 .catalog-filter-label{
+    padding: 0;
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     color: rgba(0,0,0,0.3);
     display: flex;
+}
+
+.catalog-filter-label>#text{
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-filter-label:focus-within{
@@ -1811,7 +1814,133 @@ footer{
     color: black;
 }
 
+.control{
+    position: relative;
+    display: block;
+    padding-left: 37px;
+    
+}
 
+.catalog-filter-item{
+    margin-bottom: 20px;
+}
+
+
+
+.control-mark{
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 3px;
+    opacity: 0.2;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: 3px;
+    opacity: 1;
+    background-image: url(../img/catalog-img/checked.svg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark{
+    opacity: 1;
+}
+
+
+.control:hover > .control-input[type="checkbox"]:checked ~ span{
+    opacity: 0.5;
+}
+
+.control-input[type="checkbox"]:checked:focus + .control-mark{
+    opacity: 1;
+    border-color:#af4fff;
+    
+}
+
+.control-input[type="checkbox"]:checked:focus +  .control-mark::before{
+    background-image: url(../img/catalog-img/checked-purple.svg) no-repeat;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark{
+    border-color: #af4fff;
+    opacity: 1;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark + .control-label{
+    color: #af4fff;
+    opacity: 1;
+}
+
+.control:active > .control-input[type="checkbox"]:checked ~ span{
+    opacity: 0.2;
+}
+
+.control:active > .control-input[type="checkbox"] ~ span{
+    opacity: 0.2;
+}
+
+
+
+
+/*Радио-кнопки*/
+
+.control-input[type="radio"] + .control-mark{
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark{
+    opacity: 1;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+   
+}
+
+.control:hover > .control-input[type="radio"]:checked ~ span{
+    opacity: 0.5;
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark{
+    opacity: 1;
+    border-color:#af4fff;
+    
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark::before{
+    background-color: #af4fff;
+}
+
+.control-input[type="radio"]:focus ~ span{
+    color: #af4fff;
+    opacity: 1;
+}
+
+.control-input[type="radio"]:focus + .control-mark{
+    border-color: #af4fff;
+    opacity: 1;
+}
+
+.control:active > .control-input[type="radio"]:checked ~ span{
+    opacity: 0.2;
+}
+
+.control:active > .control-input[type="radio"] ~ span{
+    opacity: 0.2;
+}
 
 .control-label{
     font-family: "Rubik","Arial", sans-serif;
@@ -1829,6 +1958,34 @@ footer{
     text-decoration: none;
     color: black;
     letter-spacing: 0.2em;
+    padding: 9px 10px 11px;
+    position: relative;
+    border: none;
+    z-index: 2;
+    background-color: transparent;
+    width: 200px;
+}
+
+
+
+.button-moreinfo-dark::before{
+    content: "";
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background-color: #ffc700;
+    z-index: -1;
+}
+
+.button-moreinfo-dark:hover{
+    background-color: #ffc700;
+}
+
+.button-moreinfo-dark:active{
+    background-color: #ffc700;
+    color:rgba(0, 0, 0, 0.3)
 }
 
 .product-card{
@@ -1848,6 +2005,8 @@ footer{
 }
 
 .product-card-title{
+    margin: 0;
+    padding: 0;
     font-family: "Rubik","Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1855,8 +2014,6 @@ footer{
     text-align: left;
     text-decoration: none;
     letter-spacing: -0.02em;
-    grid-column: 1/2;
-    grid-row: 3/4;
     justify-self: start;
 }
 
@@ -1907,6 +2064,7 @@ footer{
 
 .pagination{
     margin: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -2346,7 +2504,7 @@ footer{
 .catalog-filter{
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: transparent;
     padding-left: 60px;
 }
 
@@ -2357,6 +2515,8 @@ footer{
 }
 
 .range-input{
+    padding: 0;
+    margin: 0;
     font-family: inherit;
     font-size: 15px;
     line-height: 18px;
@@ -2437,6 +2597,11 @@ footer{
 .catalog-filter-list{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+}
+
+.catalog-filter-item{
+    line-height: 20px;
 }
 
 .catalog-pagination-container{
