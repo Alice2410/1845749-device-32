@@ -48,7 +48,33 @@
                         </li>
                         <li class="page-header_user-navigation-item page-header_user-navigation-item_cart">
                             <svg class="cart-icon" aria-hidden="true" focusable="false" width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m30.3 7-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9h-3.5c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L31 8v-.2c0-.4-.3-.8-.7-.8ZM23 3.9l2.2 3.2h-4.3L23 3.9Z" fill="#000"/><circle cx="10.5" cy="10.5" r="10.5" fill="#fff"/></svg>
-                            <a class="navigation-link-user" href="#">Корзина</a>
+                            <a class="navigation-link-user navigation-link-user-cart" href="#">Корзина</a>
+                            <div class="popover popover-cart">
+                                <h2 class="popover-title visually-hidden">Корзина</h2>
+                                <button class="popover-close-button visually-hidden"><span class="visually-hidden">Закрыть</span>></button>
+                                <div class="popover-content">
+                                    <ul class="popover-items-list">
+                                        <li class="popover-item popover-item-1">
+                                            <a class="popover-item-link"><img class="img-item" src="./img/catalog-img/product-1.jpg" width="41" height="43"></a>
+                                            <span class="popover-item-name">Любительская<br>селфи-палка</span>
+                                            <button class="popover-delete-button"><span class="visually-hidden">Удалить товар</span></button>
+                                        </li>
+                                        <div class="in-between"></div>
+                                        <li class="popover-item popover-item-2">
+                                            <a class="popover-item-link"><img class="img-item" src="./img/catalog-img/product-2.jpg" width="41" height="43"></a>
+                                            <span class="popover-item-name">Профессиональная<br>селфи-палка</span>
+                                            <button class="popover-delete-button"><span class="visually-hidden">Удалить товар</span></button>
+                                        </li>
+                                    </ul>
+                                    <div class="total-cart">
+                                        <span class="popover-items-number">Товаров: 2</span>
+                                        <span class="popover-total">Сумма: 2000 ₽</span>
+                                    </div>
+                                    <button class="popover-open-button"><span class="popover-button-text">Открыть корзину</span></button>
+
+                                </div>
+                                
+                            </div>
                             <span class="item-cart_prchases-number">2</span>
                         </li>
                     </ul>

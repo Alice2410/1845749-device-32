@@ -281,6 +281,10 @@ body{
     outline: transparent;
 }
 
+.navigation-link-user-cart:focus + .popover{
+    display: block;
+}
+
 .page-header_user-navigation-item_login.main-page-login{
     margin-right: 151px;
 }
@@ -2747,6 +2751,165 @@ footer{
     grid-column: 3/4;
     grid-row: 2/3;
 }
+
+.popover{
+    display: none;
+    position: absolute;
+    bottom: -302px;
+    left: -133px;
+    width: 320px;
+    box-sizing: border-box;
+    background-color: black;
+    z-index: 10;
+    font-family: "Rubik";
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    min-height: 91px;
+}
+
+.popover::before{
+    content: "";
+    background-color: transparent;
+    width: 14px;
+    height: 6px;
+    position: absolute;
+    background-image: url(../img/index-img/icons/popover-triangle.svg);
+    top: -6px;
+    left: 150px;
+}
+
+.popover-content{
+    display: grid;
+    grid-template-rows: 83px 1px 83px 44px 91px;
+    height: 100%;
+}
+
+.popover-items-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.popover-item{
+    display: flex;
+    align-items: center;
+}
+
+.img-item{
+    margin: 20px;
+    background-color: white;
+}
+
+.popover-item-name{
+    width: 186px;
+}
+
+.popover-item-link{
+    margin: 0;
+    padding: 0;
+}
+
+.popover-item-link:focus > .img-item{
+    outline: 5px solid #af4fff;
+}
+
+.popover-item-link:focus + span{
+    color: #af4fff;
+}
+
+.popover-item:focus-within > button{
+    outline: 2px solid #af4fff;
+}
+
+.popover-item:hover{
+    opacity: 0.6;
+}
+
+.popover-item:active{
+    opacity: 0.3;
+}
+
+.popover-open-button:focus{
+    outline: 5px solid #af4fff;
+}
+
+.popover-open-button:hover{
+    background-color: #ffe17f;
+}
+
+.popover-open-button:active{
+    background-color: #ffe17f;
+}
+
+.popover-open-button:active > span{
+    opacity: 0.3;
+}
+
+.popover-delete-button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-right: 13px;
+    margin-left: 15px;
+    background-color: transparent;
+    background-image: url(../img/index-img/icons/cross-popover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popover-item-1{
+    grid-row: 1/2;
+}
+
+.popover-item-2{
+    grid-row: 3/4;
+}
+
+.in-between{
+    grid-row: 2/3;
+    background-color: #1a1a1a;
+}
+
+.total-cart{
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+.popover-items-number{
+    width: 120px;
+    text-align: start;
+}
+
+.popover-total{
+    width: 150px;
+    text-align: end;
+}
+
+.popover-open-button{
+    grid-row: 5/6;
+    margin: 20px;
+    border: none;
+    padding: 15px 0;
+}
+
+.popover-button-text{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
 
 
 
