@@ -112,14 +112,17 @@
                 
             </header>
 <!--Каталог товаров-->
-            <section class="catalog-products container">
+            <section class="catalog-products ">
                 <!--Временно скрываем заколовок с помощью hidden-->
                 <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-                <!--Левая колонка с фильтрами-->
+                <div class="left-top"></div>
+                <div class="left-bottom"></div>
+                <div class="right-top"></div>
+                <div class="catalog-filter-title-container">
+                    <p class="catalog-filter-title">Фильтр:</p>
+                </div>
                 <div class="catalog-left-column">
-                    <div class="catalog-filter-title-container">
-                        <p class="catalog-filter-title">Фильтр:</p>
-                    </div>
+                    
                     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <!--Управление стоимостью товара-->
                             <fieldset class="catalog-filter-group">
@@ -213,30 +216,30 @@
                             </button>
                     </form>
                 </div>
-                <!--Сортировка каталога товаров-->
-                <section class="catalog">
-                    <div class="sorting-container">
-                        <!--Временный атрибут hidden-->
-                        <h2 class="visually-hidden">Каталог товаров</h2>
-                        <form class="sorting-type">
-                            <label class="catalog-sorting-title" for="sorting">Сортировка:</label>
+                <div class="sorting-container">
+                    <!--Временный атрибут hidden-->
+                    <h2 class="visually-hidden">Каталог товаров</h2>
+                    <form class="sorting-type">
+                        <label class="catalog-sorting-title" for="sorting">Сортировка:</label>
+                        <div class="select">
                             <select class="select-control" id="sorting" name="sorting">
-                            <option value="popular">Сначала популярное</option>
-                            <option value="cheap">Сначала дешёвое</option>
-                            <option value="expensive">Сначала дорогое</option>
+                                <option value="popular">Сначала популярное</option>
+                                <option value="cheap">Сначала дешёвое</option>
+                                <option value="expensive">Сначала дорогое</option>
                             </select>
-                            <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-                        </form>
-                        <a href="#" class="button button-light sorting-button">
-                            <svg class="sort-up" aria-hidden="true" focusable="false" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0 11 10H0" fill="#000" /></svg>
-                            <span class="visually-hidden">Сначала дорогие</span>
-                        </a>
-                        <a href="#" class="button sorting-button">
-                            <svg class="sort-down" aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="black"/></svg>
-                            <span class="visually-hidden">Сначала дешевые</span>
-                        </a>
-                    </div>
-                    <div class="catalog-cards-wraper">
+                        </div>
+                        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                    </form>
+                    <a href="#" class="button button-light sorting-button">
+                        <svg class="sort-up" aria-hidden="true" focusable="false" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0 11 10H0" fill="#000" /></svg>
+                        <span class="visually-hidden">Сначала дорогие</span>
+                    </a>
+                    <a href="#" class="button sorting-button">
+                        <svg class="sort-down" aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="black"/></svg>
+                        <span class="visually-hidden">Сначала дешевые</span>
+                    </a>
+                </div>
+                <div class="catalog-cards-wraper">
                         <!--Карточки товаров-->
                         <div class="product-cards-container">
                         <div class="product-card">
@@ -269,7 +272,7 @@
                             </a>
                             <button class="button-moreinfo-card">Подробнее</button>
                         </div>
-                        <div class="product-card">
+                        <div class="product-card new">
                             <a class="product-card-link" href="product.html">
                                 <img class="product-card-image" src="img/catalog-img/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                                 <div class="product-card-description">
@@ -312,9 +315,8 @@
                             </li>
                         </ul>
                         </div>
-                    </div>
+                </div>
                 
-                </section>
             </section>
         </div>
         

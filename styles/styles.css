@@ -1589,11 +1589,6 @@ footer{
     color: white;
 }
 
-
-.footer-phone_container:focus-within{
-    
-}
-
 .contacts-phone-footer:focus{
     outline: 2px solid #af4fff;
     border-radius: 25px;
@@ -1699,17 +1694,23 @@ footer{
     align-items: center;
     background-color: #ebebeb;
     position: relative;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 .sorting-container::after{
     content: "";
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: #ebebeb;
+    /*
     height: 70px;
     width: calc(100vw - 830px);
-    position: absolute;
     top: 0;
     left: 0;
-    background-color: #ebebeb;
+    
     z-index: -4;
+    */
 }
 
 .catalog-sorting-title{
@@ -1720,6 +1721,7 @@ footer{
     color: black;
     background-color: #ebebeb;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
     padding: 0;
     margin: 0;
     margin-right: 55px;
@@ -1752,9 +1754,6 @@ footer{
 .sorting-button:active>svg{
     fill-opacity: 1;
 }
-
-.button-light{}
-
 
 .catalog-filter-title-category{
     font-family: "Rubik","Arial", sans-serif;
@@ -1992,6 +1991,17 @@ footer{
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.new::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/catalog-img/new.svg);
+    top: 27px;
+    right: 27px;
+    z-index: 2;
 }
 
 .product-card-image{
@@ -2468,6 +2478,49 @@ footer{
     padding-top: 44px;
 }
 
+.select{
+    width: 217px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.select-control{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 13px;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    appearance: none;
+    background-image: url(../img/catalog-img/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: top 7px right 15px ;
+}
+
+.select:hover{
+    opacity: 0.6;
+}
+
+
+
+.select:focus-within{
+    outline: 5px solid #af4fff;
+}
+
+.select-control:focus{
+    outline: none;
+}
+
+.select:active{
+    opacity: 0.3;
+    outline: none;
+}
+
 .sorting-type{
     background-color: #ebebeb;
     padding-top: 25px;
@@ -2482,7 +2535,11 @@ footer{
 .catalog-filter-title-container{
     margin: 0;
     padding: 0;
+    /*
     margin-bottom: 83px;
+    */
+    grid-column: 2/3;
+    grid-row: 1/2;
     background-color: #dcdcdc;
     padding-top: 25px;
     padding-bottom: 26px;
@@ -2490,22 +2547,42 @@ footer{
     position: relative;
 }
 
-.catalog-filter-title-container::after{
+.left-top{
     content: "";
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #dcdcdc;
+}
+    /*
     height: 70px;
     width: 100vw;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #dcdcdc;
+    
     z-index: -2;
+}
+*/
+
+.left-bottom{
+    background-color: #ebebeb;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.right-top{
+    background-color: #ebebeb;
+    grid-row: 1/2;
+    grid-column: 4/5;
 }
 
 .catalog-filter{
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: #ebebeb;
     padding-left: 60px;
+    padding-top: 83px;
+    
 }
 
 .range-wrapper-inputs{
@@ -2609,7 +2686,9 @@ footer{
 }
 
 .catalog-products{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 328px 832px 1fr;
+    grid-template-rows: 70px 1fr;
 }
 
 .catalog{
@@ -2621,10 +2700,17 @@ footer{
 .catalog-left-column{
     width: 328px;
     position: relative;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #ebebeb;
 }
 
 .catalog-left-column::after{
     content: "";
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+    /*
     height: 100%;
     width: 100vw;
     position: absolute;
@@ -2632,6 +2718,7 @@ footer{
     right: 0;
     background-color: #ebebeb;
     z-index: -3;
+    */
 }
 
 .product-cards-container{
@@ -2656,6 +2743,9 @@ footer{
     display: flex;
     flex-direction: column;
     padding-left: 70px;
+    padding-bottom: 77px;
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 
