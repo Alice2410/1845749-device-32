@@ -142,7 +142,34 @@ body{
   padding: 10px;
   background-color: transparent;
   border: none;
-  border-left: solid 2px #000000;
+  border: solid 2px #000000;
+  border-bottom-right-radius:   20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  left: 358px;
+}
+
+.page-header_button:focus{
+    outline: 2px solid #af4fff;
+    outline-offset: -2px;
+}
+
+.page-header_button:hover{
+    background-color: black;
+    color: white;
+}
+
+.page-header_button:active{
+    background-color: black;
+    outline: none;
+}
+
+.page-header_button:active > span{
+    opacity: 0.3;
+}
+
+.page-header_input:not(:placeholder-shown) + .page-header_button{
+    display: block;
 }
 
 .user-visually-hidden{
@@ -251,6 +278,10 @@ body{
 .page-header_form:focus-within{
     border-radius: 20px;
     outline: 2px solid #af4fff;
+}
+
+.page-header_form:active{
+    outline: 2px solid black;
 }
 
 .page-header_form:focus-within input{
