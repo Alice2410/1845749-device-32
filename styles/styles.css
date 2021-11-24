@@ -133,13 +133,14 @@ body{
   display: none;
   width: 160px;
   box-sizing: border-box;
-  font-family: Rubik;
+  font-family: "Rubik","Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   padding: 10px;
+  margin-top: -2px;
   background-color: transparent;
   border: none;
   border: solid 2px #000000;
@@ -551,6 +552,10 @@ body{
     background-image: url(../img/index-img/icons/background_1.svg);
 }
 
+.navigation-button:focus{
+    outline: none;
+}
+
 .page-header_catalog-link:hover + button{
     background-image: url(../img/index-img/icons/background_3.svg);
 
@@ -590,7 +595,6 @@ body{
 .page-main_slider-item{
     width: 1160;
     margin-top: -38px;
-    max-height: 560px;
 }
 
 .page-main_slider-body{
@@ -600,6 +604,7 @@ body{
     gap: 40px;
     position: relative;
     top: -150px;
+    margin-bottom: -150px;
 }
 
 .page-main_slider-header{
@@ -613,7 +618,6 @@ body{
 
 .page-main_slider-section{
     width: 560px;
-    height: 560px;
     position: relative;;
 }
 
@@ -650,13 +654,14 @@ body{
 
 .slider-pagination{
     margin: 0;
+    margin-top: -13px;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    bottom: 177px;
+    top: 365px;
     right: 60px;
 }
 
@@ -886,12 +891,18 @@ h3 {
 
 .category-link{
     text-decoration: none;
+    outline: none;
 }
 
 
 
+
 .page-main_categories{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+.category{
+    margin-bottom: 20px;
 }
 
 .page-main_tabs{
@@ -1099,10 +1110,9 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     display: block;
-    width: 522px;
-    margin-left: auto;
-    margin-right: auto;
     text-decoration: none;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
 .page-main_delivery{
@@ -1448,7 +1458,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding-top: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 52px;
 }
 
 .footer-contacts-container{
@@ -1466,7 +1476,7 @@ footer{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    min-width: 300px;
+    width: 300px;
     text-align: left;
     position: relative;
 }
@@ -1481,7 +1491,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
+    max-width: 500px;
 }
 
 .footer-navigation_list-item{
@@ -1506,10 +1518,7 @@ footer{
     position: relative;
 }
 
-.footer-navigation_list-item:first-child{
-    position: relative;
-    left: 10px;
-}
+
 
 .footer-navigation_list-item:last-child{
     position: relative;
@@ -1604,6 +1613,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     min-width: 150px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -1804,6 +1814,10 @@ footer{
 
 .sorting-button:active{
     outline: transparent;
+}
+
+.sorting-button_current>svg{
+    fill-opacity: 1;
 }
 
 .sorting-button:active>svg{
@@ -2228,6 +2242,7 @@ footer{
 .social-media{
     height: 40px;
     width: 40px;
+    margin-bottom: 10px;
 }
 
 .social-media> svg {
@@ -2522,6 +2537,7 @@ footer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 750px;
 }
 
 .newsletter{
@@ -2707,6 +2723,7 @@ footer{
 
 .range-toggle:focus{
     border-color: #af4fff;
+    outline: none;
 }
 
 .toggle-min:focus
@@ -2813,7 +2830,7 @@ footer{
     box-sizing: border-box;
     background-color: black;
     z-index: 10;
-    font-family: "Rubik";
+    font-family: "Rubik","Arial", sans-serif;
     font-weight: 400px;
     font-size: 16px;
     line-height: 20px;
@@ -2868,6 +2885,10 @@ footer{
     padding: 0;
 }
 
+.popover-item-link:focus{
+    outline:none;
+}
+
 .popover-item-info:focus-within > .popover-item-link> .img-item{
     outline: 5px solid #af4fff;
 }
@@ -2878,6 +2899,15 @@ footer{
 
 .popover-delete-button:focus{
     outline: 2px solid #af4fff;
+}
+
+.popover-delete-button:hover{
+    opacity: 0.6;
+}
+
+.popover-delete-button:active{
+    opacity: 0.3;
+    outline: transparent;
 }
 
 .popover-item-info:hover{
