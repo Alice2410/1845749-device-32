@@ -2302,7 +2302,185 @@ footer{
     fill: #c7a014;
 }
 
+.modal-container-close{
+    display: none;
+}
 
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color:rgba(240, 240, 240, 0.9);
+}
+
+.modal{
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding: 72px 80px 80px 80px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.modal-delivery{
+    width: 920px;
+    outline: 10px solid black;
+    outline-offset: -10px;
+}
+
+.modal-close-button{
+    position: absolute;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../img/index-img/icons/modal-cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    top: 75px;
+    right: 68px;
+}
+
+.modal-close-button:focus{
+    outline: 5px solid #af4fff;
+}
+
+.modal-close-button:hover{
+    opacity: 0.6;
+}
+
+.modal-close-button:active{
+    outline: none;
+    opacity: 0.3;
+}
+
+.modal-title{
+    margin: 0;
+    margin-bottom: 68px;
+    font-family: "Raleway","Arial", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    color: black;
+}
+
+
+.delivery-form-fields{
+    border: none;
+    display: grid;
+    grid-template-columns: 400px 200px 160px;
+    grid-template-rows: 94px 30px 94px;
+    margin-bottom: 40px;
+}
+
+.field-group{
+    position: relative;
+}
+
+.your-name-field{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.subscription-name{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.your-email-field{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.subscription-email{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.need-item-field{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.item-amount-field{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.delivery-form-label{
+    font-family: "Rubik", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.delivery-form-field{
+    margin: 0;
+    margin-top: 6px;
+    padding: 0 20px;
+    text-align: left;
+    height: 60px;
+    border: none;
+    background-color: #f0f0f0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(0,0,0);
+}
+
+.delivery-form-field:focus{
+    outline: 5px solid #af4fff;
+}
+
+.delivery-form-field:hover{
+    background-color: #ebebeb;
+}
+
+.delivery-form-field:active{
+    background-color: white;
+    color: black;
+    outline: 3px solid black;
+}
+
+.modal-field-error{
+    background-color: white;
+    color: black;
+    outline: 3px solid #ff3d3d;
+}
+
+.item-amount-button:focus{
+    outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.item-amount-button:hover{
+    fill-opacity: 1;
+}
+
+
+.delivery-form-field::placeholder{
+    font-family: "Rubik", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+
+.form-subscription{
+    font-family: "Rubik", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.subscription-error{
+    color: red;
+}
 
 .product-card-link{
     text-decoration: none;
@@ -2310,6 +2488,115 @@ footer{
     padding: 0;
     position: relative;
 }
+
+.your-name-input{
+    width: 360px;
+    box-sizing: border-box;
+    margin-right: 40px;
+}
+
+.your-name-field::before{
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    bottom: 24px; 
+    right: 61px;
+    background-image: url(../img/index-img/icons/user-modal.svg);
+}
+
+.your-email-field::before{
+    content: "";
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    bottom: 24px; 
+    right: 20px;
+    background-image: url(../img/index-img/icons/mail-modal.svg);
+}
+
+.modal-info{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffe17f;
+    background-image: url(../img/index-img/icons/modal-info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 2px;
+    right: 14px;
+}
+
+
+.email-input{
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.need-item-input{
+    width: 560px;
+    box-sizing: border-box;
+    margin-right: 40px;
+}
+
+.item-amount-input{
+    width: 160px;
+    box-sizing: border-box;
+    text-align: center;
+    appearance: none;
+}
+
+.item-amount-field{
+    position: relative;
+    
+}
+
+.item-amount-button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+}
+
+.amount-button-less{
+    bottom: 14px;
+    left: 11px;
+    background-image: url(../img/index-img/icons/minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.amount-button-less:hover{
+    background-image: url(../img/index-img/icons/minus-2.svg);
+}
+
+.amount-button-less:active{
+    background-image: url(../img/index-img/icons/minus-2.svg);
+    opacity: 0.1;
+    outline: none;
+}
+
+.amount-button-more{
+    bottom: 14px;
+    right: 11px;
+    background-image: url(../img/index-img/icons/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.amount-button-more:hover{
+    background-image: url(../img/index-img/icons/plus-2.svg);
+}
+
+.amount-button-more:active{
+    background-image: url(../img/index-img/icons/plus-2.svg);
+    opacity: 0.1;
+    outline: none;
+}
+
 
 .product-card:focus-within>a{
     outline: none;

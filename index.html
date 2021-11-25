@@ -505,5 +505,41 @@
             </div>
         </div>
     </footer>
+    <div class="modal-container-close modal-container ">
+        <div class="modal modal-delivery">
+            <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="model-content">
+                <h2 class="modal-title">Доставка под заказ</h2>
+                <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="delivery-form-fields">
+                        <p class="field-group your-name-field">
+                            <label class="delivery-form-label your-name-label" for="name">Ваше имя:</label><br>
+                            <input class="delivery-form-field your-name-input" type="text" id="name" name="name" placeholder="Имя Фамилия">
+                        </p>
+                        <p class="form-subscription subscription-name subscription-error">Пожалуйста, представьтесь</p>
+                        <p class="field-group your-email-field">
+                            <label class="delivery-form-label email-label" for="email">Ваш e-mail:</label><br>
+                            <input class="delivery-form-field email-input" type="email" id="email" name="email" value="krasotka92@mail.ru">
+                        </p>
+                        <p class="form-subscription subscription-email">Забавный у вас адрес</p>
+                        <p class="field-group need-item-field">
+                            <label class="delivery-form-label need-item-label" for="item">Что нужно привезти:</label><br>
+                            <input class="delivery-form-field need-item-input" type="text" id="item" name="item" placeholder="В свободной форме">
+                        </p>
+                        <p class="field-group item-amount-field">
+                            <span class="modal-info"></span>
+                            <button class="item-amount-button amount-button-less "><span class="visually-hidden">Меньше</span></button>
+                            <button class="item-amount-button amount-button-more "><span class="visually-hidden">Больше</span></button>
+                            <label class="delivery-form-label item-amount-label" for="item-amount">Количество:</label><br>
+                            <input class="delivery-form-field item-amount-input" type="number" id="item-amount" name="item-amount" value="1">
+                        </p>
+                    </div>
+                    <button class="delivery-form_send-button button-moreinfo-dark" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
