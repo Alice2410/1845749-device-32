@@ -21,14 +21,14 @@
         <!--Первая строка навигации-->
             <div class="page-header_menu">
         <!--Форма поиска по сайту-->
-                <form class="page-header_form" action="https://echo.htmlacademy.ru" method="post" value="product-name">
+                <form class="page-header_form" action="https://echo.htmlacademy.ru" method="post" >
                     
                         <label for="product-name" >
                            
                             <span class="visually-hidden"> Поиск товара</span>
                         </label>
                     
-                        <input class="page-header_input" type="text" id="product-name" name="product-name" required placeholder="Поиск по сайту">
+                        <input class="page-header_input" type="text" id="product-name" name="product-name" value="product-name" required placeholder="Поиск по сайту">
                         <button class="page-header_button" type="submit"><span>Найти</span></button>
                 </form>
         <!--Пользовательское меню-->
@@ -49,7 +49,7 @@
                         </li>
                         <li class="page-header_user-navigation-item page-header_user-navigation-item_cart">
                             <svg class="cart-icon" aria-hidden="true" focusable="false" width="31" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m30.3 7-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9h-3.5c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L31 8v-.2c0-.4-.3-.8-.7-.8ZM23 3.9l2.2 3.2h-4.3L23 3.9Z" fill="#000"/><circle cx="10.5" cy="10.5" r="10.5" fill="#fff"/></svg>
-                            <a class="navigation-link-user navigation-link-user-cart" href="#">Корзина</a>
+                            <button class="navigation-link-user navigation-link-user-cart" href="#">Корзина</button>
                             <span class="item-cart_prchases-number">2</span>
                             <div class="popover popover-cart">
                                 <h2 class="popover-title visually-hidden">Корзина</h2>
@@ -58,15 +58,15 @@
                                     <ul class="popover-items-list">
                                         <li class="popover-item popover-item-1">
                                             <div class="popover-item-info">
-                                                <a class="popover-item-link" href="#"><img class="img-item" src="./img/catalog-img/product-1.jpg" width="41" height="43"></a>
+                                                <a class="popover-item-link" href="#"><img class="img-item" src="./img/catalog-img/product-1.jpg" width="41" height="43" alt="Любительская селфи-палка"></a>
                                                 <span class="popover-item-name">Любительская<br>селфи-палка</span>
                                             </div>
                                             <button class="popover-delete-button"><span class="visually-hidden">Удалить товар</span></button>
                                         </li>
-                                        <div class="in-between"></div>
+                                        <li class="in-between"></li>
                                         <li class="popover-item popover-item-2">
                                             <div class="popover-item-info">
-                                                <a class="popover-item-link" href="#"><img class="img-item" src="./img/catalog-img/product-2.jpg" width="41" height="43"></a>
+                                                <a class="popover-item-link" href="#"><img class="img-item" src="./img/catalog-img/product-2.jpg" width="41" height="43" alt="Профессиональная селфи-палка"></a>
                                                 <span class="popover-item-name">Профессиональная<br>селфи-палка</span>
                                             </div>
                                             <button class="popover-delete-button"><span class="visually-hidden">Удалить товар</span></button>
@@ -363,9 +363,9 @@
                                     <path d="M98.0231 7C130.512 7 156.945 33.432 156.945 65.922C156.945 70.43 156.416 74.972 155.372 79.422L155.366 79.449L155.359 79.476L155.33 79.606C155.292 79.776 155.254 79.945 155.212 80.121C155.118 80.497 155.021 80.872 154.91 81.282L154.807 81.682C154.781 81.79 154.753 81.898 154.724 82.006C149.16 102.062 136.204 119.706 116.218 134.448C108.845 139.886 101.81 143.912 96.4991 146.623V131.275V125.121L90.395 124.333C61.152 120.556 39.1011 95.444 39.1011 65.921C39.1021 33.432 65.5341 7 98.0231 7ZM98.0231 0C61.6161 0 32.1021 29.514 32.1021 65.922C32.1021 99.439 57.1221 127.094 89.5 131.276V157.5C89.5 157.5 146.939 136.257 161.47 83.878C161.548 83.595 161.608 83.34 161.68 83.066C161.794 82.642 161.905 82.216 162.011 81.789C162.074 81.526 162.13 81.275 162.188 81.02C163.326 76.169 163.946 71.119 163.946 65.922C163.945 29.514 134.432 0 98.0231 0Z" fill="#3A3A3A"/>
                                     </g>
                                     <defs>
-                                    <clipPath id="clip0">
+                                    
                                     <rect width="171" height="195" fill="white"/>
-                                    </clipPath>
+                                    
                                     </defs>
                                     </svg>
                             </div>
@@ -450,7 +450,7 @@
                     <form class="newsletter-form" id="newsletter" action="https://echo.htmlacademy.ru/" method="post">
                         <p class="newsletter-email">
                             <label class="visually-hidden" for="newsletter-email">Email</label>
-                            <input class="field" required placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                         </p>
                     </form>
                     <div class="newsletter-button-container">
@@ -530,14 +530,17 @@
                         </p>
                         <p class="field-group item-amount-field">
                             <span class="modal-info"></span>
+                            
                             <button class="item-amount-button amount-button-less "><span class="visually-hidden">Меньше</span></button>
                             <button class="item-amount-button amount-button-more "><span class="visually-hidden">Больше</span></button>
                             <label class="delivery-form-label item-amount-label" for="item-amount">Количество:</label><br>
-                            <input class="delivery-form-field item-amount-input" type="number" id="item-amount" name="item-amount" value="1">
+                            <input class="delivery-form-field item-amount-input" type="text" id="item-amount" name="item-amount" value="1">
+                            
                         </p>
                     </div>
                     <button class="delivery-form_send-button button-moreinfo-dark" type="submit">Отправить</button>
                 </form>
+
             </section>
         </div>
     </div>

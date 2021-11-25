@@ -341,7 +341,7 @@ body{
 
 .page-header_user-navigation-item_cart{
     position: relative;
-    right: -21px;
+    right: -27px;
 }
 
 .item-cart_prchases-number{
@@ -364,6 +364,10 @@ body{
     padding: 11px 21px 10px 21px;
     position: relative;
     flex-basis: auto;
+}
+
+.navigation-link-user-cart{
+    border: none;
 }
 
   .page-header_user-navigation-item:not(.page-header_user-navigation-item_cart):hover {
@@ -410,7 +414,7 @@ body{
 .page-header_user-navigation-item>.cart-icon {
     width: 31px;
     height: 21px;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 .page-header_user-navigation-item_cart{
@@ -626,7 +630,7 @@ body{
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 250px;
+    top: 243px;
     cursor: pointer;
 }
 
@@ -645,11 +649,11 @@ body{
 }
 
 .slider-prev{
-    left: 19px;
+    left: 9px;
 }
 
 .slider-next{
-    right: 19px;
+    right: 9px;
 }
 
 .slider-pagination{
@@ -736,7 +740,8 @@ h3 {
 .slider-description_title{
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-bottom: 28px;
 }
 
 .slider-description_product-description{
@@ -746,7 +751,7 @@ h3 {
     color: #444444;
     padding: 0;
     margin: 0;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
     
 }
 
@@ -869,7 +874,7 @@ h3 {
 .parameter>td{
     padding: 0;
     margin: 0;
-    padding-top: 14px;
+    padding-top: 7px;
 }
 
 .categories-container{
@@ -898,11 +903,12 @@ h3 {
 
 
 .page-main_categories{
-    margin-bottom: 50px;
+    margin-bottom: 61px;
 }
 
 .category{
     margin-bottom: 20px;
+    margin-top: -7px;
 }
 
 .page-main_tabs{
@@ -1128,7 +1134,7 @@ h3 {
     display: flex;
     gap: 40px;
     justify-content: center;
-    padding-bottom: 87px;
+    padding-bottom: 17px;
 }
 
 .about-us{
@@ -1183,7 +1189,7 @@ h3 {
     line-height: 20px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     padding: 0;
     padding-top: 45px;
     padding-left: 35px;
@@ -1235,7 +1241,7 @@ h3 {
 .delivery-items{
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     position: relative;
 }
 
@@ -1499,10 +1505,11 @@ footer{
 .footer-navigation_list-item{
     padding: 0;
     margin: 0;
+    margin-top: -15px;
     font-family: "Raleway","Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    padding: 12px 18px 13px 18px;
+    padding: 12px 17px 13px 17px;
     position: relative;
 }
 
@@ -1573,6 +1580,7 @@ footer{
 
 .footer-phone_container{
     width: 176px;
+    margin-top: -15px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -1595,7 +1603,8 @@ footer{
 }
 
 .footer-decoration{
-    width: 135px;
+    width: 120px;
+    margin-top: -5px;
     position: relative;
 }
 
@@ -1615,6 +1624,7 @@ footer{
     min-width: 150px;
     max-width: 500px;
     margin: 0 auto;
+    margin-top: -5px;
 }
 
 .social-media:not(:last-child){
@@ -1682,7 +1692,7 @@ footer{
     color: black;
     margin: 0;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs{
@@ -1690,7 +1700,7 @@ footer{
     padding:0;
     list-style-type: none;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
 }
 
 .breadcrumbs-item{
@@ -1789,7 +1799,7 @@ footer{
     letter-spacing: 0.2em;
     padding: 0;
     margin: 0;
-    margin-right: 55px;
+    margin-right: 35px;
 }
 
 .sorting-button{
@@ -1798,6 +1808,10 @@ footer{
     padding: 10px;
     display: flex;
     align-items: center;
+}
+
+.sorting-button:last-child{
+    margin-right: -10px;
 }
 
 .sorting-button>svg{
@@ -2074,7 +2088,7 @@ footer{
 }
 
 .product-card-image{
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 }
 
 .product-card-description{
@@ -2117,7 +2131,7 @@ footer{
     text-transform: uppercase;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     border: none;
 }
 
@@ -2147,6 +2161,7 @@ footer{
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pagination-prev{
@@ -2170,7 +2185,7 @@ footer{
     align-items: center;
     justify-content: center;
     color: black;
-    margin-left:140px ;
+    
 }
 
 .catalog-prev{
@@ -2190,6 +2205,16 @@ footer{
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;  
+}
+
+.pagination-turn-prev{
+    max-width: 160px;
+    margin-right: auto;
+}
+
+.pagination-turn-next{
+    max-width: 130px;
+    margin-left: auto;
 }
 
 .pagination-turn:focus{
@@ -2834,7 +2859,7 @@ footer{
 .main-inner{
     margin: 0;
     padding: 0;
-    padding-top: 44px;
+    padding-top: 36px;
 }
 
 .select{
@@ -2972,9 +2997,14 @@ footer{
 
 .catalog-filter-group{
     margin: 0;
-    margin-bottom: 36px ;
+    margin-bottom: 43px ;
     padding: 0;
     border: none;
+}
+
+.filter-group-bluetooth{
+    margin-top: -8px;
+    margin-bottom: 25px;
 }
 
 .range-scale{
@@ -3084,9 +3114,9 @@ footer{
 .product-cards-container{
     display: grid;
     grid-template-columns: repeat(2, 360px);
-    row-gap: 44px;
+    row-gap: 50px;
     column-gap: 40px;
-    margin-bottom: 44px;
+    margin-bottom: 56px;
     padding-top: 70px;
     /*
     реализация блка с карточками товаров на флексах
